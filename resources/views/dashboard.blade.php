@@ -14,4 +14,8 @@
             </div>
         </div>
     </div>
+
+    <div class="py-12">
+        <a href="{{ route('siswa.index') }}">Data siswa</a>
+    </div>
 </x-app-layout>

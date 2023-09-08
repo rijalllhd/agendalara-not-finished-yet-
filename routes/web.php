@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
+use App\Http\Controllers\SiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +23,6 @@ Route::prefix('guru')->group(function(){
     Route::get('/logout',[GuruController::class, 'GuruLogout'])->name('guru.logout')->middleware('guru');
     Route::get('/register',[GuruController::class, 'GuruRegister'])->name('guru.register');
     Route::post('/register/owner',[GuruController::class, 'GuruRegisterCreate'])->name('guru.register.create');
-
-
-    Route::resource('barang', BarangController::class);
 });
 
 
@@ -42,5 +40,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::resource('siswa', SiswaController::class)->except('show')->middleware('auth');
 
 require __DIR__.'/auth.php';
