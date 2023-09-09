@@ -11,7 +11,7 @@ use Carbon\carbon;
 class GuruController extends Controller
 {
     public function Index(){
-        return view('guru.guru_login');
+        return view('login.loginguru');
     }
 
     public function Dashboard(){

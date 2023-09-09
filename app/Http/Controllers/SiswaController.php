@@ -13,18 +13,14 @@ class SiswaController extends Controller
      */
     public function index()
     {
+        $kelas = Kelas::all();
         $siswa = Siswa::all();
-        return view('siswa.index',compact('siswa'));
+        return view('siswa.index',compact('siswa', 'kelas'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        $kelas = Kelas::all();
-        return view('siswa.create', compact('kelas'));
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -81,7 +77,9 @@ class SiswaController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $kelas = Kelas::all();
+        $siswa = Siswa::all();
+        return view('siswa.index',compact('siswa', 'kelas'));
     }
 
     /**
