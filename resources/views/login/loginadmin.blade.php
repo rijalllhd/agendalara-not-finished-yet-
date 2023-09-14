@@ -16,7 +16,7 @@
             </span>
             <br>
             <div class="grid place-items-center">
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('login') }}" >
                 @csrf
                     <label for="" class="text-gray-900">Email</label>
                     <input type="text" name="email" id="email" type="email"
@@ -29,13 +29,9 @@
                         placeholder="********">
                     <br>
 
-                    <x-primary-button class="ml-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-            
                     <button type="submit" name="submit">
                     <a href=""
-                        class="flex justify-center items-center bg-gray-900 hover:bg-gray-950 shadow-md text-white rounded-md px-4 py-2 font-medium">Login</a></button>
+                        class="w-full bg-gray-900 hover:bg-gray-950 shadow-md text-white rounded-md px-4 py-2 font-medium">{{ __('Log in') }}</a></button>
                 </form>
                 <br>
                 <p class="text-sm">Belum memiliki akun? <a href="{{ url('/registeradmin') }}"

@@ -114,7 +114,7 @@
                             Agama
                         </th>
                         <th scope="col" class="px-6 py-3">
-                            
+
                             </th>
                         </tr>
                     </thead>
@@ -138,8 +138,8 @@
                             {{ $d->kelas->nama_kelas }}
                         </td>
                         <td class="flex items-center px-6 py-4 space-x-3">
-                            <button id="detailModalButton" class="font-medium text-stone-600 dark:text-stone-500 hover:underline">Detail</button>
-                            <button id="editButton" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Ubah</button>
+                            <button id="detailModalButton" class="font-medium text-stone-600 dark:text-stone-500 hover:underline"><a href="{{ url('siswa/'.$d->id.'/detail') }}"> Detail </a> </button>
+                            <button id="editButton" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"><a href="{{ url('siswa/'.$d->id.'/edit') }}">Ubah</a> </button>
                             <form onsubmit="return confirm('Yakin Ingin Menghapus Data Ini?')"
                                 action="{{ url('siswa/'.$d->id) }}" method="post">
                                 @csrf
@@ -157,7 +157,7 @@
 </main>
 
     <!-- Create Modal -->
-    <div id="createModal" class=" inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div id="createModal" class=" inset-0 flex items-center justify-center bg-black bg-opacity-50   ">
         <div class="bg-white p-6 rounded-lg shadow-md">
         <div class="flex justify-end">
             <button id="cancelcreate"

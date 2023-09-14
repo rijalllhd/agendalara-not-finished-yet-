@@ -26,7 +26,7 @@ class GuruController extends Controller
         } else {
             return back()->with('error', 'Invalid Email or Password');
         }
-        
+
     }
 
     public function GuruLogout(){
@@ -48,5 +48,10 @@ class GuruController extends Controller
         ]);
 
         return redirect()->route('login_from')->with('error','Registered Success');
+    }
+
+
+    public function indexdata(){
+        return view('guru.index.data');
     }
 }
