@@ -95,7 +95,42 @@ class SiswaController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        // dd($request);
+        $request->validate([
+            'nama' => 'required',
+            'kelas_id' => 'required',
+            'nis' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'agama' => 'required',
+            'alamat' => 'required',
+            'jenis_kelamin' => 'required',
+            'foto' => 'required',
+        ],[
+            'nama.required'=>'nama Wajib Diisi',
+            'kelas_id.required'=>'kelas_id Wajib Diisi',
+            'nis.required'=>'nis Wajib Diisi',
+            'tempat_lahir.required'=>'tempat_lahir Wajib Diisi',
+            'tanggal_lahir.required'=>'tanggal_lahir Wajib Diisi',
+            'agama.required'=>'agama Wajib Diisi',
+            'alamat.required'=>'alamat Wajib Diisi',
+            'jenis_kelamin.required'=>'jenis_kelamin Wajib Diisi',
+            'foto.required'=>'foto Wajib Diisi',
+        ]);
+        $siswa = [
+            'nama'=>$request->nama,
+            'kelas_id'=>$request->kelas_id,
+            'nis'=>$request->nis,
+            'tempat_lahir'=>$request->tempat_lahir,
+            'tanggal_lahir'=>$request->tanggal_lahir,
+            'agama'=>$request->agama,
+            'alamat'=>$request->alamat,
+            'jenis_kelamin'=>$request->jenis_kelamin,
+            'foto'=>$request->foto,
+        ];
+
+        Siswa::where('id', $id)->update($siswa);
+        return redirect()->to('siswa')->with('succes', 'pastikan data betul setelah diubah');
     }
 
     /**

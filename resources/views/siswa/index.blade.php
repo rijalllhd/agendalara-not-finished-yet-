@@ -207,10 +207,6 @@
                     <input type="text" name="alamat" id="alamat" required value="{{ Session::get
                     ('alamat') }}" placeholder="Alamat" class="p-2 w-full bg-slate-100 rounded-md mb-3">
 
-                    <label for="" class="right-2 mb-1">Foto</label><br>
-                    <input type="text" name="foto" id="foto" required value="{{ Session::get
-                    ('foto') }}" placeholder="Foto" class="p-2 w-full bg-slate-100 rounded-md mb-3">
-
                     <div class="flex justify-center">
                         <button id="confirmcreate" type="submit"
                         class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 hover:text-gray-100">SIMPAN</button>

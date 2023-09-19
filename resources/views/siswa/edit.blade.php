@@ -56,13 +56,7 @@ edit page ini ja
             <input type="text" name="alamat" id="alamat" required value="{{ $siswa->alamat }}">
         </div>
         <br>
-
-        <label for="foto">foto</label>
-            <input type="text" name="foto" id="foto" required value="{{ $siswa->foto }}">
-        </div>
-        <br>
         
-
         <div class="flex justify-between"><a href="{{ url('siswa') }}">
             <button type="button" href="{{ route('siswa.index') }}">
                 Kembali

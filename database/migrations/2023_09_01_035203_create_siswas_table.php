@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('agama');
             $table->string('alamat');
             $table->enum('jenis_kelamin',['L','P']);
-            $table->string('foto');
             $table->timestamps();
         });
 
@@ -36,7 +35,6 @@ return new class extends Migration
             'agama' => 'islam',
             'alamat' => 'cilengsi,gndoang',
             'jenis_kelamin' => 'L',
-            'foto' => 'rizal.jpg',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
