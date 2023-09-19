@@ -1,4 +1,4 @@
-@extends('sidebar')
+@extends('layouts.app')
 
 @section('content')
 <!-- content -->

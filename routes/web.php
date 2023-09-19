@@ -42,5 +42,16 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('siswa', SiswaController::class)->except('show')->middleware('auth');
+Route::resource('mapel', MapelController::class)->except('show')->middleware('auth');
+Route::resource('guru', GuruController::class)->except('show')->middleware('auth');
+Route::resource('kelas-jurusan', KelasController::class)->except('show')->middleware('auth');
+Route::resource('agenda', AgendaController::class)->except('show')->middleware('auth');
+Route::resource('jadwal', JadwalController::class)->except('show')->middleware('auth');
+
+Route::get('/siswa/{id}/detail', [SiswaController::class, 'detail'])
+    ->middleware('auth');
+
+Route::get('/guru/index/data', [GuruController::class, 'indexdata'])
+    ->middleware('auth');
 
 require __DIR__.'/auth.php';

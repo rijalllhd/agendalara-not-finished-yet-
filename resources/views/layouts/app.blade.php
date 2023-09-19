@@ -39,19 +39,19 @@
                     <p class=" font-light">Menu Utama</p>
                 </li>
                 <li>
-                    <a href="{{ url('/dashboard') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
+                    <a href="{{ route('dashboard') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
                     <img src="" alt="#">
                     Dashboard
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/agenda') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
+                    <a href="{{ route('agenda.index') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
                     <img src="" alt="#">
                     Agenda
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/agenda') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
+                    <a href="{{ route('jadwal.index') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
                     <img src="" alt="#">
                     Jadwal Pelajaran
                     </a>
@@ -63,13 +63,13 @@
                     <p class="text-sm font-light">Basis Data</p>
                 </li>
                 <li>
-                    <a href="{{ url('/dataguru') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
+                    <a href="{{ url('guru/index/data') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
                     <img src="" alt="#">
                     Data Guru
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/mapel') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
+                    <a href="{{ route('mapel.index') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
                     <img src="" alt="#">
                     Mata Pelajaran
                     </a>
@@ -81,7 +81,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/kelas-jurusan') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
+                    <a href="{{ route('kelas-jurusan.index') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
                     <img src="" alt="#">
                     Kelas & Jurusan
                     </a>
@@ -121,7 +121,7 @@
                             document.getElementById('logout-form').submit();">
                         <button id="confirmLogout"
                         class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700 hover:text-gray-100">Keluar</button></a>
-                        
+
 
 
                     </div>

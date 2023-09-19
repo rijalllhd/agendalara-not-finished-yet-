@@ -78,8 +78,16 @@ class SiswaController extends Controller
     public function edit(string $id)
     {
         $kelas = Kelas::all();
-        $siswa = Siswa::all();
-        return view('siswa.index',compact('siswa', 'kelas'));
+        $siswa = Siswa::where('id', $id)->first();
+        return view('siswa.edit',compact('siswa', 'kelas'));
+    }
+
+
+    public function detail(string $id)
+    {
+        $kelas = Kelas::all();
+        $siswa = Siswa::where('id', $id)->first();
+        return view('siswa.detail',compact('siswa', 'kelas'));
     }
 
     /**
