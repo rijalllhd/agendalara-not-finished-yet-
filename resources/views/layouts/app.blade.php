@@ -81,7 +81,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('kelas-jurusan.index') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
+                    <a href="{{ route('kelas.index') }}" class="flex items-center rounded-md hover:bg-gray-600 hover:text-white hover:font-medium py-2 px-2">
                     <img src="" alt="#">
                     Kelas & Jurusan
                     </a>

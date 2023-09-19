@@ -44,7 +44,7 @@ Route::middleware('auth')->group(function () {
 Route::resource('siswa', SiswaController::class)->except('show')->middleware('auth');
 Route::resource('mapel', MapelController::class)->except('show')->middleware('auth');
 Route::resource('guru', GuruController::class)->except('show')->middleware('auth');
-Route::resource('kelas-jurusan', KelasController::class)->except('show')->middleware('auth');
+Route::resource('kelas', KelasController::class)->except('show')->middleware('auth');
 Route::resource('agenda', AgendaController::class)->except('show')->middleware('auth');
 Route::resource('jadwal', JadwalController::class)->except('show')->middleware('auth');
 

@@ -219,64 +219,7 @@
         </div>
     </div>
 
-    <!-- Edit Modal -->
-    <div id="editModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="flex justify-end">
-            <button id="canceleditModal"
-                class="mr-2 px-3 font-medium py-1 bg-gray-50 text-gray-700 rounded-xl hover:bg-gray-600 hover:text-gray-100 shadow">X</button>
-        </div>
-        <p class="flex justify-center font-medium text-lg">UBAH DATA</p>
-        <p class="flex justify-center font-light text-sm mb-4">Mohon berhati-hati & perhatikan keakuratan saat mengubah data</p>
-            <form class="px-4 py-2 left-1/2 grid grid-cols-2 gap-4">
-                <div>
-                    <label for="" class="right-2 mb-1">NIS</label><br>
-                        <input type="text" name="" value="" placeholder="Nomor Induk Siswa" class="p-2 w-full bg-slate-100 rounded-md mb-3">
 
-                    <label for="" class="right-2 mb-1">Nama</label><br>
-                        <input type="text" name="" value="" placeholder="Nama Siswa" class="p-2 w-full bg-slate-100 rounded-md mb-3">
-
-                    <label for="" class="right-2 mb-1">Jenis Kelamin</label><br>
-                        <select id="" name=""
-                            class="p-2 w-full bg-slate-100 rounded-md mb-3">
-                                <option disabled value>--- Pilih Jenis Kelamin ---</option>
-                                <option value="L">Laki-laki</option>
-                                <option value="P">Perempuan</option>
-                        </select>
-
-                    <label for="" class="right-2 mb-1">Kelas</label><br>
-                        <select id="" name=""
-                            class="p-2 w-full bg-slate-100 rounded-md mb-3">
-                                <option disabled value>--- Pilih Kelas ---</option>
-                                <option value="">XII RPL 1</option>
-                                <option value="">XII RPL 2</option>
-                        </select>
-                </div>
-                <div>
-                    <label for="" class="right-2 mb-1">Tempat Tanggal Lahir</label><br>
-                        <input type="date" name="" value="" placeholder="Tempat Tanggal Lahir Siswa" class="p-2 w-full bg-slate-100 rounded-md mb-3">
-
-                    <label for="" class="right-2 mb-1">Agama</label><br>
-                        <select id="" name=""
-                            class="p-2 w-full bg-slate-100 rounded-md mb-3">
-                                <option disabled value>--- Pilih Agama ---</option>
-                                <option value="L">Islam</option>
-                                <option value="P">Kristen</option>
-                                <option value="L">Hindu</option>
-                                <option value="P">Budha</option>
-                                <option value="P">Konghucu</option>
-                        </select>
-
-                    <label for="" class="right-2 mb-1">Alamat</label><br>
-                        <input type="text" name="" value="" placeholder="Alamat Siswa" class="p-2 w-full bg-slate-100 rounded-md mb-3">
-                </div>
-            </form>
-        <div class="flex justify-center">
-            <button id="confirmeditModal"
-            class="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 hover:text-gray-100">SIMPAN</button>
-        </div>
-        </div>
-    </div>
 
     <!-- Delete Modal -->
     <div id="deleteModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
@@ -297,36 +240,6 @@
         </div>
     </div>
 
-<!-- detail Modal -->
-<div id="detailModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
-    <div class="bg-white p-6 rounded-lg shadow-md">
-        <div class="flex justify-end">
-            <button id="canceldetail"
-                class="mr-2 px-3 font-medium py-1 bg-gray-50 text-gray-700 rounded-xl hover:bg-gray-600 hover:text-gray-100 shadow">X</button>
-        </div>
-        <p class="flex justify-center font-medium text-lg">Detail Data Siswa</p>
-        <p class="flex justify-center font-light text-sm mb-4">Berikut ini adalah informasi siswa, harap digunakan dengan bertanggung jawab</p>
-        <hr>
-        <br>
-        <div class="grid p-2">
-            <div>
-                <p class="mb-3 mt-2">NIS          : 212210389</p>
-                <hr>
-                <p class="mb-3 mt-2">Nama         : Muhammad Irfan Ramadhan</p>
-                <hr>
-                <p class="mb-3 mt-2">Jenis Kelamin: Laki-laki</p>
-                <hr>
-                <p class="mb-3 mt-2">Kelas        : XII RPL 1</p>
-                <hr>
-                <p class="mb-3 mt-2">Tanggal Lahir: 2006-09-27</p>
-                <hr>
-                <p class="mb-3 mt-2">Agama        : Islam</p>
-                <hr>
-                <p class="mb-3 mt-2">Alamat       : Griya Bukit Jaya</p>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
