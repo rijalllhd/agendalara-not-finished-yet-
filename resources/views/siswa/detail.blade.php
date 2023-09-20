@@ -13,6 +13,6 @@ jk : @if  ( $siswa->jenis_kelamin == "L" )
 agama : {{ $siswa->agama }}<br>
 alamat : {{ $siswa->alamat }}<br>
 tempat lahir : {{ $siswa->tempat_lahir }}<br>
-tgl lahir : {{ $siswa->tgl_lahir }}<br>
+tgl lahir : {{ $siswa->tanggal_lahir }}<br>
 
 <a href="{{ route('siswa.index') }}">kembali</a>

@@ -31,7 +31,7 @@ return new class extends Migration
             'nama' => 'rizal',
             'nis' => '2122425',
             'tempat_lahir' => 'Pemalang',
-            'tanggal_lahir' => '2006/01/14',
+            'tanggal_lahir' => '2006-01-14',
             'agama' => 'islam',
             'alamat' => 'cilengsi,gndoang',
             'jenis_kelamin' => 'L',

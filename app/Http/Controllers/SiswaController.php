@@ -22,6 +22,12 @@ class SiswaController extends Controller
      * Show the form for creating a new resource.
      */
 
+     public function create()
+    {
+        $kelas = Kelas::all();
+        $siswa = Siswa::all();
+        return view('siswa.create',compact('siswa', 'kelas'));
+    }
     /**
      * Store a newly created resource in storage.
      */
@@ -37,7 +43,6 @@ class SiswaController extends Controller
             'agama' => 'required',
             'alamat' => 'required',
             'jenis_kelamin' => 'required',
-            'foto' => 'required',
         ],[
             'nama.required'=>'nama Wajib Diisi',
             'kelas_id.required'=>'kelas_id Wajib Diisi',
@@ -47,7 +52,6 @@ class SiswaController extends Controller
             'agama.required'=>'agama Wajib Diisi',
             'alamat.required'=>'alamat Wajib Diisi',
             'jenis_kelamin.required'=>'jenis_kelamin Wajib Diisi',
-            'foto.required'=>'foto Wajib Diisi',
         ]);
         $siswa = [
             'nama'=>$request->nama,
@@ -58,7 +62,6 @@ class SiswaController extends Controller
             'agama'=>$request->agama,
             'alamat'=>$request->alamat,
             'jenis_kelamin'=>$request->jenis_kelamin,
-            'foto'=>$request->foto,
         ];
         Siswa::create($siswa);
         return redirect()->to('siswa')->with('success', 'Pastikan kembali jika data yang ditambahkan telah sesuai.');
@@ -105,7 +108,6 @@ class SiswaController extends Controller
             'agama' => 'required',
             'alamat' => 'required',
             'jenis_kelamin' => 'required',
-            'foto' => 'required',
         ],[
             'nama.required'=>'nama Wajib Diisi',
             'kelas_id.required'=>'kelas_id Wajib Diisi',
@@ -115,7 +117,6 @@ class SiswaController extends Controller
             'agama.required'=>'agama Wajib Diisi',
             'alamat.required'=>'alamat Wajib Diisi',
             'jenis_kelamin.required'=>'jenis_kelamin Wajib Diisi',
-            'foto.required'=>'foto Wajib Diisi',
         ]);
         $siswa = [
             'nama'=>$request->nama,
@@ -126,7 +127,6 @@ class SiswaController extends Controller
             'agama'=>$request->agama,
             'alamat'=>$request->alamat,
             'jenis_kelamin'=>$request->jenis_kelamin,
-            'foto'=>$request->foto,
         ];
 
         Siswa::where('id', $id)->update($siswa);
